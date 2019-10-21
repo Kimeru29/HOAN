@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/{id?}")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
+        private static readonly string[] Summaries = {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
@@ -35,5 +33,8 @@ namespace api.Controllers
             })
             .ToArray();
         }
+
+        //[HttpGet]
+        //public string GetById(int id) => Summaries[id];
     }
 }
