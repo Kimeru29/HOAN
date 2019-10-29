@@ -1,0 +1,66 @@
+@import "../../variables";
+
+.land {
+  height: 100vh;
+  width: inherit;
+  color: $fuente;
+  position: relative;
+  background: $primary;
+
+  h1 {
+    color: $fuente;
+    opacity: 1;
+    font-size: 4rem;
+    padding: 8rem 0 0 18px;
+    margin: 0 auto;
+  }
+
+  nav{
+    height: 10vh;
+    a{
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 1rem;
+      width: 12rem;
+
+    }
+
+    a.btn-outline-dark{
+      margin-right: 14rem;
+    }
+  }
+
+
+  .imagen{
+    height: 90vh;
+    width: inherit;
+    display: flex;
+
+    img {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}
+
+
+
+
+// .landR{
+//   background-color: $hot-pink;
+//   height: 100vh;
+//   button{
+//     position: absolute;
+//     top: 0;
+
+//   }
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+img {
+  height: 400px;
+  max-width: 100%;
+}
