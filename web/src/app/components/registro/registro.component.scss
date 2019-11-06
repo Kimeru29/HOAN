@@ -1,0 +1,97 @@
+@import "../../variables";
+@import "../../mediaUniversal";
+
+.formulario-page {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $blanco;
+
+  h1 {
+    text-align: center;
+  }
+
+  .formulario {
+    width: 30vmax;
+    height: 80vh;
+    background-color: $fuente;
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3rem rgba(255, 255, 255, 0.6);
+
+    @include media-universal(650px){
+      width: 80vw;
+    }
+
+    .imghold {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row nowrap;
+      margin-bottom: 1rem;
+
+      img {}
+    }
+
+
+    form {
+      margin-top: 1rem;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      input {
+        width: 100%;
+        height: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #ccc;
+        background-color: $fuente;
+        border-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 1px rgba(255, 255, 255, 0.6);
+      }
+
+      input:focus {
+        border-color: rgba(255, 206, 4, 0.8);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 206, 4, 0.6);
+        color: $blanco;
+      }
+
+      input[type="submit"] {
+        width: 60%;
+        border: 1px solid $blanco;
+        color: $blanco;
+      }
+
+      input[type="submit"]:hover {
+        background-color: $primary;
+        color: $fuente;
+        border: none;
+      }
+    }
+
+    a::before {
+      content: "";
+      display: block;
+      border: 1px solid $blanco;
+      width: 100%;
+    }
+
+    .footer {
+      position: absolute;
+      width: calc(100% - 4rem);
+      bottom: 10px;
+      text-align: center;
+      color: $blanco;
+    }
+
+    .footer::hover {
+      color: $blanco;
+    }
+  }
+}

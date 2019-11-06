@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace api.Models
 {
-    public class Receptor
+    public class Receptor : Usuario
     {
+        public int Id { get; set; }
+        public virtual ICollection<Emisor> Emisores { get; set; }
     }
 }

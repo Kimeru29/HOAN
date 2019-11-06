@@ -11,7 +11,7 @@ export class Land1Component implements OnInit {
 
   ngOnInit() {
     const options = {
-      strings: ['Seguridad.', 'Discovery.'],
+      strings: ['Seguridad', 'Bienestar', 'HOAN'],
       typeSpeed: 100,
       backSpeed: 100,
       showCursor: false,
