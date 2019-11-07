@@ -1,17 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using api.Core.Repository;
 using api.Data;
+using api.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace api
 {
@@ -30,6 +25,17 @@ namespace api
             services.AddControllers();
             services.AddDbContext<HoanContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("Hoan")));
+            services.AddScoped<DbContext, DbContext>();
+            services.AddScoped<IEmisoresRepository, EmisoresRepository>();
+            services.AddScoped<IReceptoresRepository, ReceptoresRepository>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    p => p.AllowAnyOrigin().
+                        AllowAnyHeader().
+                        AllowAnyMethod()
+                );
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +45,8 @@ namespace api
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 

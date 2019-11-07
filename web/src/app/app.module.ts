@@ -8,8 +8,8 @@ import { IntelComponent } from './components/intel/intel.component';
 import { CedukComponent } from './components/ceduk/ceduk.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LandPageComponent } from './components/land-page/land-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'registro', component: RegistroComponent },
@@ -33,7 +33,9 @@ const appRoutes: Routes = [
     FlexLayoutModule,
     RouterModule.forRoot(
       appRoutes,
-    )
+    ),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

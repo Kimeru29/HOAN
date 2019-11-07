@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using api.Core.Repository;
+using System;
 
 namespace api.Core.UnitOfWork
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
+        IEmisoresRepository EmisoresRepository { get; set; }
+        IReceptoresRepository ReceptoresRepository { get; set; }
 
+        void Complete();
     }
 }
