@@ -15,7 +15,6 @@ const appRoutes: Routes = [
   { path: 'registro', component: RegistroComponent },
   { path: 'land', component: LandPageComponent },
   { path: '',   redirectTo: '/land', pathMatch: 'full' }
-  // { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
