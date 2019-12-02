@@ -1,3 +1,0 @@
-@mixin media-universal($size) {
-  @media (max-width: $size) { @content; }
-}
