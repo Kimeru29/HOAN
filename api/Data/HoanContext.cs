@@ -3,20 +3,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Data
 {
-    public class HoanContext : DbContext
+  public class HoanContext : DbContext
+  {
+    public HoanContext(DbContextOptions? options) : base(options)
     {
-        public HoanContext(DbContextOptions options) : base(options)
-        {
-        }
-
-        public DbSet<Emisor> Emisores { get; set; }
-        public DbSet<Receptor> Receptores { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-
-
-        }
     }
+
+    public DbSet<Emisor> Emisores { get; set; }
+    public DbSet<Receptor> Receptores { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+      base.OnModelCreating(modelBuilder);
+
+
+    }
+  }
 }

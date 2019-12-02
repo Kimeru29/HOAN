@@ -2,9 +2,9 @@
 
 namespace api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class EmisoresController : ControllerBase
-    {
-    }
+  [Route("api/[controller]")]
+  [ApiController]
+  public class EmisoresController : ControllerBase
+  {
+  }
 }

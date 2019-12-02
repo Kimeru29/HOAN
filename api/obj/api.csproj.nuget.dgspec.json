@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\api.csproj": {}
+    "c:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\api.csproj": {
+    "c:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\api.csproj",
+        "projectUniqueName": "c:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\api.csproj",
+        "projectPath": "c:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\api.csproj",
         "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\obj\\",
+        "outputPath": "c:\\Users\\pablo\\Documents\\Proyectos\\HOAN\\HOAN\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
