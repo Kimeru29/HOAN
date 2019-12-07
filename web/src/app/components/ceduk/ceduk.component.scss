@@ -1,7 +1,7 @@
 @import "../../variables";
 @import "../../mediaUniversal";
 
-.ceduk{
+.ceduk {
   height: 80vh;
   width: 100vw;
   background-color: $primary;
@@ -9,25 +9,30 @@
   justify-content: center;
   align-items: center;
 
-  img{
+  img {
     height: 100px;
     width: 100px;
-    padding-left: .3rem;
+    padding-left: 0.3rem;
   }
 
-  @include media-universal(800px){
-    h1{
+  @include media-universal(800px) {
+    h1 {
       font-size: 2rem;
-
     }
   }
 
-  .ion{
-    color: #FF0000;
+  .ion {
+    color: #ff0000;
   }
 }
 
-footer{
+footer {
   background-color: $fuente;
   color: $blanco;
+}
+
+.footer-copyright {
+  position: relative;
+  left: 35%;
+  padding-top: 10px;
 }
