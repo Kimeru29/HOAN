@@ -17,14 +17,15 @@
 
   .formulario {
     width: 32vmax;
-    height: 85vh;
+    height: 88vh;
     background-color: $fuente;
     padding: 1rem 2rem;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     border-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3rem rgba(255, 255, 255, 0.6);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+      0 0 3rem rgba(255, 255, 255, 0.6);
 
-    @include media-universal(650px){
+    @include media-universal(650px) {
       width: 80vw;
     }
 
@@ -35,9 +36,9 @@
       flex-flow: row nowrap;
       margin-bottom: 1rem;
 
-      img {}
+      img {
+      }
     }
-
 
     form {
       margin-top: 1rem;
@@ -52,11 +53,12 @@
         color: #ccc;
         background-color: $fuente;
         border-color: rgba(255, 255, 255, 0.8);
-        margin-top: .5rem;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 1px rgba(255, 255, 255, 0.6);
+        margin-top: 0.5rem;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+          0 0 1px rgba(255, 255, 255, 0.6);
       }
 
-      .alert{
+      .alert {
         margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 0;
@@ -66,7 +68,8 @@
       }
       input:focus {
         border-color: rgba(255, 206, 4, 0.8);
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 206, 4, 0.6);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+          0 0 8px rgba(255, 206, 4, 0.6);
         color: $blanco;
       }
 
@@ -81,7 +84,8 @@
         color: $fuente;
         border: none;
         border-color: rgba(255, 206, 4, 0.8);
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 206, 4, 0.6);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+          0 0 8px rgba(255, 206, 4, 0.6);
       }
     }
 
