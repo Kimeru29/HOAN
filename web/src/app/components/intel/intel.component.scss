@@ -1,7 +1,7 @@
 @import "../../variables";
 @import "../../mediaUniversal";
 
-.intel{
+.intel {
   max-width: 100vw;
   box-sizing: border-box;
   margin: 0;
@@ -9,19 +9,19 @@
   background-color: #fff;
   border-top: 1px solid #bbb;
 
-  .tarjetas{
+  .tarjetas {
     margin-top: 2rem;
     height: 50vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    @include media-universal(800px){
+    @include media-universal(800px) {
       height: 150vh;
       width: 100%;
       flex-flow: column nowrap;
     }
 
-    .tarjeta{
+    .tarjeta {
       width: 33.3%;
       display: inherit;
       flex-direction: column;
@@ -29,50 +29,47 @@
       align-items: center;
       padding: 0 1rem;
 
-      @include media-universal(800px){
+      @include media-universal(800px) {
         width: 100%;
         flex-flow: column nowrap;
         margin-bottom: 2rem;
       }
 
-      h6{
+      h6 {
         text-align: center;
       }
     }
   }
-
-
 }
 
-.celu{
+.celu {
   border-top: 1px solid #bbb;
   height: 90vh;
   background-color: $fuente;
-  p{
-    font-size: .8rem;
+  p {
+    font-size: 0.8rem;
   }
-  @include media-universal(800px){
+  @include media-universal(800px) {
     height: 110vh;
-    h3{
+    h3 {
       font-size: 1.5rem;
       text-align: center;
     }
-
   }
 }
 
-.mock{
+.mock {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  img{
+  img {
     max-width: 100%;
   }
 }
 
-.icos{
+.icos {
   overflow: hidden;
   height: 100%;
   display: flex;
@@ -81,19 +78,21 @@
   align-items: center;
   color: $blanco;
   padding-top: 2rem;
-  .neon{
-
-
+  .neon {
     display: inherit;
     flex-direction: column;
     align-items: center;
     width: 50%;
     height: 50%;
     padding: 0 1rem;
-    img{
+
+    h3 {
+      text-align: center;
+    }
+    img {
       width: 90px;
     }
-    p{
+    p {
       text-align: center;
     }
   }

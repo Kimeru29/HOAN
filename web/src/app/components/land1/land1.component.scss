@@ -12,38 +12,39 @@
     color: $fuente;
     opacity: 1;
     font-size: 4rem;
-    padding: 8rem 0 0 18px;
+    padding: 10rem 0 0 18px;
     margin: 0 auto;
   }
 
-  nav{
+  h5 {
+    line-height: 1.7rem;
+  }
+
+  nav {
     height: 10vh;
-    a{
+    a {
       display: inline-block;
       position: absolute;
       right: 0;
       top: 1rem;
       width: 12rem;
 
-      @include media-universal(800px){
-        font-size: .8rem;
+      @include media-universal(800px) {
+        font-size: 0.8rem;
         width: 8rem;
-
       }
-
     }
 
-    a.btn-outline-dark{
+    a.btn-outline-dark {
       margin-right: 14rem;
 
-      @include media-universal(800px){
+      @include media-universal(800px) {
         margin-right: 9rem;
       }
     }
   }
 
-
-  .imagen{
+  .imagen {
     height: 90vh;
     width: inherit;
     display: flex;
@@ -55,24 +56,28 @@
   }
 }
 
-.hero{
+.hero {
   padding-top: 2rem;
 
-  h1{
+  h1 {
     padding-right: 1rem;
   }
 
-  h1::before{
+  h1::before {
     content: ".";
     visibility: hidden;
   }
 
-  h5{
-    text-align: center;
+  h5 {
+    display: flex;
+    justify-self: center;
+    i {
+      display: inline;
+      position: relative;
+      top: 0;
+    }
   }
 }
-
-
 
 // .landR{
 //   background-color: $hot-pink;
